@@ -73,11 +73,48 @@ is_tall = False
 if is_male or is_tall: #or keyword executes when one or both is true ..and keyword is also used
 	print("You are male or tall or both.")
 else:
-	print("You are not male")
+	print("You are not male") # if not(is_male) --->negates the is_male value
+
+###DICTIONARIES --correspond to objects ..store values in key value pair
+
+conversion = {
+	"jan":"January", #all keys have to be unique
+	"feb":"February",
+	"mar":"march"
+}
+
+print(conversion["jan"]) #gets the value associated with key
+print(conversion.get("feb")) #gets value too
+print(conversion.get("sept","Invalid month")) #prints out second arguement if first isnt in the dictionary
+
+
+###WHILE LOOPS 
+interger = 1
+while interger<=10: ## this will execute as long as integer is less than 10
+	print(interger) #is int <= 10? if yess, print the int
+	interger +=2 #after printing the int, increment it by 1
 	
+###FOR LOOPS
 
+for letter in "Girrafe Academy":
+	print(letter) ##prints out every char in the girrafe academy
 
+persons = ["Tim","Wilm","Jim"]
 
+for person in persons:
+	print(person)
 
+for num in range(10): #range(3,10)--prints from 3 to 9
+	print(num)
 
+###Catching errors
+
+try:
+	value = 10/0
+	number = int(input("Enter a number"))
+	print(number)
+except ZeroDivisionError: #handles the first error 
+	print("Divided by zero")
+except ValueError:
+	print("Invalid input")
 
