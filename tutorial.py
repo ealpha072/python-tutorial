@@ -42,9 +42,39 @@ print(friends)
 friends.append("Creed") #adds to the end
 friends.insert(1, "John") # adds john at index 1
 friends.remove("Lucky") 
-friends.clear() #clears everything from the list
-friends.pop() #removes last element
-friends.index("Kevin") #says if kevin is in the list, if name isnt in list, it produces an error
+#friends.clear() #clears everything from the list
+#friends.pop() #removes last element
+#friends.index("Kevin") #says if kevin is in the list, if name isnt in list, it produces an error
+#friends.count("Kevin") #specifies how may times kevin is in the list
+#friends.sort() #sorts alphabetically
+#friends.reverse() #reverses friends order
+
+friends_2 = friends.copy() #copies friends to friends_2
+
+##tuples ---similar to lists ..they cant bemodified whatssoever
+coodinates = (4,5,4) #cretes a tupple
+
+###FUNCTIONS 
+def sayhi(person, age):
+	print("Hello "+person+" you are "+ str(age)) #indentation is very important;
+
+sayhi("Mike",45); ##calls the function.....
+
+def cube(num):
+	return num*num*num #return statement...this can be stored
+
+result = cube(45) #holds the value of calling the cube function
+print(result)
+
+####IF STATEMENTS
+is_male = True
+is_tall = False
+
+if is_male or is_tall: #or keyword executes when one or both is true ..and keyword is also used
+	print("You are male or tall or both.")
+else:
+	print("You are not male")
+	
 
 
 
