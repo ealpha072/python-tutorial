@@ -118,3 +118,17 @@ except ZeroDivisionError: #handles the first error
 except ValueError:
 	print("Invalid input")
 
+####dealing with files...
+myfile = open("filename","r") #r is for reading ...you can use "w" for writing, "a" is append, "r+" read and write access
+print(myfile.readable()) #returns true or false depending on files readability
+print(myfile.read()) #prints out entire file
+print(myfile.readline()) #prints out file lines and moves to next line
+print(myfile.readlines()) #takes each line and puts it in an array..
+
+myfile.close() #closes a file 
+
+###MODULES...
+import file  ##google "list of python modules"
+##pip is a package manager...
+##open the cmd
+
