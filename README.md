@@ -6,6 +6,6 @@ All basics are covered in the notes.
   * Variables initialization
   * Loops 
   * Lists and tuples
-  * Funstions 
+  * Functions 
   * Imports statements and woking modules
   * Catching and handling errors.
