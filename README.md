@@ -9,3 +9,4 @@ All basics are covered in the notes.
   * Functions 
   * Imports statements and woking modules
   * Catching and handling errors.
+  * Dictionaries
