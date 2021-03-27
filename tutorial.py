@@ -1,4 +1,5 @@
 print ("Hello world!!!") # prints to console.
+import time; #imports the time module
 
 #variables 
 char_name = "Alpha"
@@ -132,3 +133,5 @@ import file  ##google "list of python modules"
 ##pip is a package manager...
 ##open the cmd
 
+#date and time
+localtime= time.localtime(time.time())
