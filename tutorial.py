@@ -137,3 +137,58 @@ import file  ##google "list of python modules"
 
 localtime= time.localtime(time.time())
 
+#python functions
+def sayHi(name):
+	print ("Hello",name)
+
+sayHi("Alpha")
+
+#referencing vs value
+def changeValue(arr):
+	arr.append([1,3,3,2,4])
+	return
+
+arr=[12,23,12,43,4,43,34,4,34]
+changeValue(arr)
+print (arr)
+
+#keyword arguments
+def printMe(str):
+	print (str)
+	return
+
+printMe(str="My name is Alpha")
+
+def info(name, age):
+	print ("Name:", name)
+	print ("Age:", age)
+	return;
+
+info(age=50, name="Alpha") #order doesnt matter with keyword arguments
+
+#default aurguments
+
+def agename(name,age=35):
+	print ("Name:",name)
+	print ("Age:",age)
+	return;
+
+agename(name="Alpha")  #prints both age and name...age will have the default value
+
+#variable length arguments
+
+def printInfo(arg1, *vartuple): #* used for var length args, when you arent sure how many args you will need;
+	print("Output is", arg1)
+	for var in vartuple:
+		print (var)
+	return;
+
+printInfo("Hello",10,45,"rest")
+
+#anonymous functions
+add = lambda arg1,arg2: arg2+arg1;
+
+print ("Value sum is",add(10,20));
+
+
+
